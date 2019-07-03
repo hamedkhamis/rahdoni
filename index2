@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://rahdoni.com/css/bootstrap.min.css">
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<title></title>
+	<style type="text/css">
+<link href="https://cdn.rawgit.com/rastikerdar/vazir-font/v[X.Y.Z]/dist/font-face.css" rel="stylesheet" type="text/css" />
+  @font-face {
+  font-family: 'Vazir';
+  src: url('Vazir.eot'); /* IE9 Compat Modes */
+  src: url('Vazir.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('Vazir.woff2') format('woff2'), /* Super Modern Browsers */
+       url('Vazir.woff') format('woff'), /* Pretty Modern Browsers */
+       url('Vazir.ttf')  format('truetype'), /* Safari, Android, iOS */
+}
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+body{
+	font-family: Vazir !important;
+}
+ul { 
+	list-style-type: none; 
+	text-align: right;
+} 
+img {
+	vertical-align: middle;
+}
+.container {
+	padding: auto;
+	margin: auto;
+}
+
+@media (min-width:768px) {
+	.container {
+		width: 750px;
+	}
+}
+
+@media (min-width:992px) {
+	.container {
+		width: 970px;
+	}
+}
+
+@media (min-width:1200px) {
+	.container {
+		width: 1195px;
+	}
+}
+
+.col-lg-3,
+.col-lg-4,
+.col-lg-5,
+.col-md-3,
+.col-md-4,
+.col-md-5,
+.col-xs-6 {
+	min-height: 1px;
+	padding: auto;
+}
+
+.col-xs-6 {
+	float: left;
+}
+
+.col-xs-6 {
+	width: 50%;
+}
+
+@media (min-width:992px) {
+	.col-md-3,
+	.col-md-4,
+	.col-md-5 {
+		float: left;
+	}
+	.col-md-5 {
+		width: 41.66666667%;
+	}
+	.col-md-4 {
+		width: 33.33333333%;
+	}
+	.col-md-3 {
+		width: 25%;
+	}
+}
+
+@media (min-width:1200px) {
+	.col-lg-3,
+	.col-lg-4,
+	.col-lg-5 {
+		float: left;
+	}
+	.col-lg-5 {
+		width: 41.66666667%;
+	}
+	.col-lg-4 {
+		width: 33.33333333%;
+	}
+	.col-lg-3 {
+		width: 25%;
+	}
+}
+
+
+@media (min-width:992px) {
+	.col-md-3,
+	.col-md-4,
+	.col-md-5 {
+		float: right;
+	}
+	.col-md-5 {
+		width: 41.66666667%;
+	}
+	.col-md-4 {
+		width: 33.33333333%;
+	}
+	.col-md-3 {
+		width: 25%;
+	}
+}
+
+@media (min-width:1200px) {
+	.col-lg-3,
+	.col-lg-4,
+	.col-lg-5 {
+		float: right;
+	}
+	.col-lg-5 {
+		width: 41.66666667%;
+	}
+	.col-lg-4 {
+		width: 33.33333333%;
+	}
+	.col-lg-3 {
+		width: 25%;
+	}
+}
+.menu_top_header {
+	float: right;
+	margin: 10px 0;
+	padding: 0;
+}
+
+.menu_top_header li:first-child {
+	border-right: 0;
+	padding-right: 0;
+}
+
+.menu_top_header li {
+	float: right;
+	list-style: none;
+	padding: 0 17px;
+	border-right: 1px solid #bcbcbc;
+	height: 14px;
+}
+
+.menu_top_header li a {
+	color: #4f4f4f;
+	padding: 0;
+	margin: -5px 10px;
+	float: right;
+}
+
+.menu_top_header li a:hover {
+	color: #df0d0d;
+}
+
+footer {
+	overflow: hidden;
+	background: #fff;
+	padding: 42px 0 20px;
+}
+
+footer .namad {
+	text-align: left;
+}
+
+footer .footer_extra {
+	background: #efefef;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	margin-top: 20px;
+	padding: 20px 0;
+	position: relative;
+	display: inline-block;
+	width: 100%;
+}
+
+footer .footer_extra .tell_email {
+	background: #4f4f4f;
+	color: #fff;
+	padding: 5px 10px;
+	font-size: 15px;
+	float: left;
+	border-radius: 20px;
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	-ms-border-radius: 20px;
+	margin-right: 10px;
+	position: relative;
+	letter-spacing: 2px;
+}
+
+footer .footer_extra .tell_email .fa {
+	float: left;
+	margin-right: 5px;
+}
+
+footer .footer_extra .footer-24-7-tag {
+	position: absolute;
+	left: -1px;
+	top: 10px;
+	z-index: 1;
+	width: 270px;
+	height: 67px;
+	background-color: transparent;
+	background-size: auto;
+	background-repeat: no-repeat;
+}
+
+footer .map img {
+	border-radius: 10px;
+	display: block;
+}
+
+.block_service {
+	display: table;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	footer .footer_extra .footer-24-7-tag {
+		top: 40px;
+	}
+	.block_service {
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.menu_top_header {
+		float: none;
+		text-align: center;
+	}
+	.menu_top_header li {
+		display: inline-block;
+		float: none;
+	}
+	.row {
+		margin: 0;
+	}
+	.block_service {
+		width: 100%;
+	}
+}
+
+@media only screen and (min-width: 0px) and (max-width: 768px) {
+	footer {
+		padding: 15px 0;
+	}
+	footer .container .row {
+		display: flex;
+		flex-flow: column;
+		align-items: center;
+		justify-content: center;
+	}
+	footer .container .row div {
+		display: flex;
+		justify-content: center;
+	}
+	footer .footer_extra {
+		display: flex;
+		flex-flow: column;
+		margin-top: unset;
+	}
+	footer .footer_extra .container ul.menu_top_header {
+		display: flex!important;
+		flex-flow: nowrap!important;
+		justify-content: center!important;
+		align-items: center!important;
+	}
+	footer .footer_extra .container ul.menu_top_header li {
+		margin: 5px 0;
+		padding: unset;
+	}
+	footer .t_e {
+		display: flex;
+		flex-flow: row-reverse;
+		align-items: center;
+		justify-content: center;
+		padding-bottom: 26px;
+	}
+	footer .t_e .tell_email:nth-child(2) {
+		margin-right: unset;
+	}
+}
+
+footer .footer_extra .tell_email {
+	letter-spacing: 1px;
+}
+
+footer .footer_extra .tell_email span {
+	display: flex;
+	flex-flow: row-reverse;
+	justify-content: center;
+	align-items: center;
+	padding: 6px;
+}
+
+footer .block_service {
+	display: flex;
+}
+
+footer .block_service .footer_widget {
+	display: flex;
+	flex-flow: column;
+	width: 50%;
+	padding-left: 15px;
+}
+
+footer .block_service .footer_widget span {
+	font-size: 12pt;
+	padding-bottom: 5px;
+	margin-bottom: 5px;
+	border-bottom: 1px solid #a7a7a7;
+}
+
+footer .block_service .footer_widget ul {
+	padding-right: 25px;
+	line-height: 2em;
+}
+
+footer .block_service .footer_widget ul li a {
+	color: #616364;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 768px) {
+	footer .footer_extra .container ul.menu_top_header {
+		flex-flow: column!important;
+		margin: unset;
+		margin-bottom: 22px;
+	}
+	footer .footer_extra .container ul.menu_top_header li {
+		border: unset!important;
+	}
+	footer .block_service {
+		flex-flow: column;
+	}
+	footer .block_service .footer_widget ul,
+	footer .block_service .footer_widget {
+		width: 100%;
+	}
+	footer .block_service .footer_widget {
+		margin-bottom: 15px;
+	}
+}
+.title{
+	text-align: right;
+}
+
+
+
+
+
+
+
+
+
+
+ strong{
+    font-weight:bolder;
+}
+
+
+ img{
+    vertical-align:middle;
+    border-style:none;
+}
+
+
+ .adx_images{
+    padding:.25rem;
+    background-color:#fff;
+    border:1px solid #c2c2c2;
+    border-radius:.25rem;
+    box-shadow:0 1px 2px rgba(0,0,0,.075);
+}
+ .row3{
+    display:flex;
+    flex-wrap:wrap;
+}
+ .col-12,.col-4,.col-md-8{
+    width:100%;
+    min-height:1px;
+}
+ .col-4{
+    flex:0 0 33.33333%;
+    max-width:33.33333%;
+}
+ .col-12{
+    flex:0 0 100%;
+    max-width:100%;
+}
+ @media (min-width:768px){
+     .col-md-8{
+        flex:0 0 66.66667%;
+        max-width:66.66667%;
+    }
+}
+ .mt-2{
+    margin-top:.5rem!important;
+}
+ .mt-3{
+    margin-top:1rem!important;
+}
+ .p-0{
+    padding:0!important;
+}
+ .adx_images{
+    max-width:100%;
+    height:auto;
+}
+
+.rowbottom{
+	margin-bottom: 10px;
+	padding: 10px !important;
+	border-bottom:3px solid;
+	border-color: red;
+	width: 70%;
+	float: right;
+	margin-right: 105px;
+
+}
+
+
+
+ @media all{
+     
+     img{
+        vertical-align:middle;
+        border-style:none;
+    }
+
+
+
+
+     .simple-grid{
+        padding:0 10px;
+        display:-webkit-box;
+        display:-moz-box;
+        display:-block;
+        display:-webkit-flex;
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:space-between;
+    }
+     .simple-grid__item{
+        margin-bottom:5px;
+        flex-basis:calc(50% - 5px);
+        box-shadow:0 1px 8px rgba(0,0,0,0.12);
+        transition:.3s box-shadow;
+        border-radius:7px;
+        text-align:center;
+        background:#f2f2f2;
+    }
+     .simple-grid__item img{
+        max-width:100%;
+        border-radius:7px;
+        display:block;
+        margin:auto;
+    }
+     .simple-grid__item:hover{
+        box-shadow:0 1px 12px rgba(0,0,0,0.25);
+    }
+     @media only screen and (min-width:768px){
+         .simple-grid{
+         	margin-bottom: 20px;
+            padding:0;
+        }
+         .simple-grid__item{
+            margin-bottom:10px;
+            flex-basis:calc(22% - 5px);
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+.owl-carousel .owl-item img{
+	height: 300px;
+}
+ .title{margin-bottom:27px;}
+.title-center{text-align:center;}
+.title-center h2{display:inline-block;font-size:22px;}
+.title-center h2:before{content:'';width:45px;height:1px;background:#a9a9a9;position:absolute;right:-55px;top:13px;}
+.title-center h2:after{content:'';width:45px;height:1px;background:#a9a9a9;position:absolute;left:-55px;top:13px;}
+.title-center h2{display:inline-block;font-size:22px;position:relative;}
+.title-center h2:before{content:'';width:45px;height:1px;background:#a9a9a9;position:absolute;right:-55px;top:13px;}
+.title-center h2:after{content:'';width:45px;height:1px;background:#a9a9a9;position:absolute;left:-55px;top:13px;}
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        </style>
+</head>
+<body>
+
+<div class="takhfifan-group">
+	<div class="title title-center clear">
+		<h2>بن های تخفیف</h2>
+	</div>
+</div>
+<div class="container" >
+
+
+
+    <div class="row slider_offer_sell">
+      <div class="slider_container_item owl-carousel">
+        <div class="slider_item"><img src="images/digi_slider.jpg" alt=""></div>
+        <div class="slider_item"><img src="images/digi_slider.jpg" alt=""></div>
+        <div class="slider_item"><img src="images/digi_slider.jpg" alt=""></div>
+        <div class="slider_item"><img src="images/digi_slider.jpg" alt=""></div>
+        <div class="slider_item"><img src="images/digi_slider.jpg" alt=""></div>
+      </div>
+    </div>
+
+
+    <div class="clear"></div>
+	
+
+
+<div class="simple-grid">
+    <a class="simple-grid__item " href="">
+<img  style="max-height:140px;" src="https://takhfifan.com/media/catalog/product/6/t/6taee--estakhr_1_15.jpg" alt="استخر">
+</a>
+    <a class="simple-grid__item " href="">
+<img style="max-height:140px;" src="https://takhfifan.com/media/catalog/product/6/t/6taee--toor_8.jpg" alt="شهربازی">
+</a>
+    <a class="simple-grid__item " href="" >
+<img style="max-height:140px;" src="https://takhfifan.com/media/catalog/product/6/t/6taee--shahre-bazi_2.jpg" alt="مجموعه">
+</a>
+    <a class="simple-grid__item " href="" >
+<img style="max-height:140px;" src="https://takhfifan.com/media/catalog/product/6/t/6taee--ghatar_1_13.jpg" alt="مجموعه">
+</a>
+    <a class="simple-grid__item " href="">
+<img class="lazy-img lazy-loaded" style="max-height:140px;" src="https://takhfifan.com/media/catalog/product/6/t/6taee--mashhad_16.jpg" alt="مجموعه">
+</a>
+    <a class="simple-grid__item " href="">
+<img class="lazy-img lazy-loaded" style="max-height:140px;" src="https://takhfifan.com/media/catalog/product/6/t/6taee--digi_1_5.jpg" alt="مجموعه">
+</a>
+    <a class="simple-grid__item " href="">
+<img class="lazy-img lazy-loaded" style="max-height:140px;" src="https://takhfifan.com/media/catalog/product/6/t/6taee--digi_1_5.jpg" alt="مجموعه">
+</a>
+    <a class="simple-grid__item " href="">
+<img class="lazy-img lazy-loaded" style="max-height:140px;" src="https://takhfifan.com/media/catalog/product/6/t/6taee--digi_1_5.jpg" alt="مجموعه">
+</a>
+</div>
+
+<div class="takhfifan-group">
+	<div class="title title-center clear">
+		<h2>بن های تخفیف</h2>
+	</div>
+</div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+
+	</div>
+<footer>
+   <div class="container">
+      <div class="row">
+         <div class="col-lg-5 col-md-5 block_service">
+            <div class="footer_widget">
+               <span class="title">ارتباط با ما</span>
+               <div>
+                  <ul>
+                     <li><a href="#">فوتر اول</a></li>
+                     <li><a href="#">فوتر دوم</a></li>
+                     <li><a href="#">فوتر سوم</a></li>
+                     <li><a href="#">فوتر چهارم</a></li>
+                     <li><a href="#">فوتر پنجم</a></li>
+                  </ul>
+               </div>
+            </div>
+            <div class="footer_widget">
+               <span class="title">تماس با ما</span>
+               <div>
+                  <ul>
+                     <li><a href="#">فوتر اول</a></li>
+                     <li><a href="#">فوتر دوم</a></li>
+                     <li><a href="#">فوتر سوم</a></li>
+                     <li><a href="#">فوتر چهارم</a></li>
+                     <li><a href="#">فوتر پنجم</a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <div class="col-lg-3 col-md-3 col-xs-6">
+            <div class="map">
+               <img src="http://takhfifat.onliner.ir/wp-content/uploads/2017/05/naghshe-1.jpg">
+            </div>
+         </div>
+         <div class="col-lg-4 col-md-4 col-xs-6 namad">
+            <p><img src="http://takhfifat.onliner.ir/wp-content/uploads/2017/05/Enamad-1.png" alt="" width="237" height="159"></p>
+         </div>
+      </div>
+   </div>
+</footer>
+      <script src="js/owl.carousel.min.js"></script>
+      <script type="text/javascript">
+        $(document).ready(function(){
+    $(".owl-carousel").owlCarousel({
+      loop:false,
+      rtl:true,
+      autoplay:true,
+      autoplayTimeout:2000,
+      responsive:{
+        0:{
+            items:1,
+            nav:true,
+            loop:true,
+            rtl:true,
+        },
+        600:{
+            items:1,
+            nav:false,
+            rtl:true,
+            loop:true,
+        },
+        1000:{
+            items:1,
+            nav:false,
+            loop:true
+        }
+    }
+    });
+
+  });
+      </script>
+</body>
+</html>
